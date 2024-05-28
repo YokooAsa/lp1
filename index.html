@@ -27,97 +27,101 @@
 
 <body>
   <!--- =========================== ヘッダー =================================== --->
-  <header class="header">
-    <div class="inner"> 
-      <div class="logo">
-        <a href="/"><img src="assets/image/ロゴ.png" alt=""></a>
+  <header class="l-header">
+    <div class="l-header__inner"> 
+      <div class="l-header__logo">
+        <a href="/"><img src="assets/image/logo.png" alt=""></a>
       </div>
-      <nav class="gnav">
+      <nav class="l-header__nav">
         <ul>
-          <a href="#main2" onclick="closeNav();"><li><i class="fa-solid fa-arrow-right"></i>選ばれる３つの理由</li></a>
-          <a href="#main3" onclick="closeNav();"><li><i class="fa-solid fa-arrow-right"></i>コース・目的</li></a>
-          <a href="#main4" onclick="closeNav();"><li><i class="fa-solid fa-arrow-right"></i>費用</li></a>
-          <a href="/entry"><li><button class="btn_entry">入学説明会に申し込む</button></li></a>
+          <li><a href="#main2" onclick="closeNav();"><i class="fa-solid fa-arrow-right"></i>選ばれる３つの理由</a></li>
+          <li><a href="#main3" onclick="closeNav();"><i class="fa-solid fa-arrow-right"></i>コース・目的</a></li>
+          <li><a href="#main4" onclick="closeNav();"><i class="fa-solid fa-arrow-right"></i>費用</a></li>
+          <li><button class="c-btn__entry" onclick="location.href='entry'">入学説明会に申し込む</button></li>
         </ul>       
       </nav>
-      <div class="burger" onclick="openNav();">
-        <div class="box">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+      <div class="l-header__burger" onclick="openNav();">
+        <div class="l-header__burger--line">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="contents">
+  <main class="p-contents">
     <!--- =========================== メイン１ =================================== --->
-    <div id="main1" class="contents_inner">
-      <div class="main_image">
-        <img class="pc" src="assets/image/mainVIsual_pc.jpg" alt="">
-        <img class="sp" src="assets/image/mainVIsual_sp.jpg" alt="">
-        <div class="main_intro">
-          <div class="top_intro">
-            <div class="block1"><img src="assets/image/frame-left.jpg" alt=""></div>
-            <div class="block2">
-              <div class="text1">難関大学の合格実績</div>
-              <div class="text2">No.<span class="text3">1</span></div>
+    <div id="main1" class="p-contents_inner">
+      <div class="l-main1__image">
+        <div class="l-main1__image__text">
+          <div class="l-main1__image__text__top">
+            <div class="l-main1__image__text__top__img">
+              <img src="assets/image/frame-left.jpg" alt="">
             </div>
-            <div class="block3"><img src="assets/image/frame-right.jpg" alt=""></div>
+            <div class="l-main1__image__text__top__main">
+              <div class="l-main1__image__text__top__main--1"><span>難関大学の合格実績</span></div>
+              <div class="l-main1__image__text__top__main--2">
+                <span>No.<span class="l-main1__image__text__top__main--3">1</span></span>
+              </div>
+            </div>
+            <div class="l-main1__image__text__top__img">
+              <img src="assets/image/frame-right.jpg" alt="">
+            </div>
           </div>
-          <div class="center_intro">
-            <div class="text4">現役高校生・高卒生</div>
+          <div class="l-main1__image__text__center">
+            <div class="l-main1__image__text__center--1"><span>現役高校生・高卒生</span></div>
           </div>
-          <div class="bottom_intro">
-            <div class="text5">入学説明会の<br>お申し込み開始</div>
+          <div class="l-main1__image__text__bottom">
+            <div class="l-main1__image__text__bottom--1"><span>入学説明会の<br>お申し込み開始</span></div>
           </div>
         </div>
       </div>
-      <div class="button_line">
-        <div class="hidden_block">
+      <div class="l-main1__button">
+        <div class="l-main1__button__inner">
           <ul>
-            <li><a href="/inquiry"><button class="inquiry">入学のお問い合わせ</button></a></li>
-            <li><a href="/freetrial"><button class="freetrial">無料体験に申し込む</button></a></li>
-            <li><a href="/request"><button class="request">資料請求する</button></a></li>
+            <li><button class="l-main1__button--inquiry" onclick="location.href='inquiry'">入学のお問い合わせ</button></li>
+            <li><button class="l-main1__button--freetrial" onclick="location.href='freetrial'">無料体験に申し込む</button></li>
+            <li><button class="l-main1__button--request" onclick="location.href='request'">資料請求する</button></li>
           </ul>
         </div>
       </div>
     </div>
 
     <!--- =========================== メイン２ =================================== --->
-    <div id="main2" class="contents_inner">
-      <section class="section_wrap">
-        <div class="reason">
-          <div class="title">
-            <h2>選ばれる<span class="three">３</span>つの理由</h2>
+    <div id="main2" class="p-contents_inner">
+      <section class="p-section">
+        <div class="l-main2">
+          <div class="p-title">
+            <h2>選ばれる<span class="p-title--three">3</span>つの理由</h2>
           </div>
-          <div class="point1">
+          <div class="l-main2__p1">
             <ul>
-              <li class="point_img"><div class="img_box"><img src="assets/image/pht_reason01.jpg" alt=""></div></li>
-              <li class="point">
-                <h3>point<span class="number">１</span></h3>
+              <li class="l-main2__img"><div class="l-main2__img__box"><img src="assets/image/pht_reason01.jpg" alt=""></div></li>
+              <li class="l-main2__point">
+                <h3>point<span class="l-main2__point__number"> 1</span></h3>
                 <h4>実績のある講師軍だから安心</h4>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               </li>
             </ul>
           </div>
-          <div class="point2">
+          <div class="l-main2__p2">
             <ul>
-              <li class="point">
-                <h3>point<span class="number">２</span></h3>
+              <li class="l-main2__point">
+                <h3>point<span class="l-main2__point__number"> 2</span></h3>
                 <h4>オンラインにも対応だから、早送り巻き戻し視聴できる。</h4>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
               </li>
-              <li class="point_img"><div class="img_box"><img src="assets/image/pht_reason02.jpg" alt=""></div></li>
+              <li class="l-main2__img"><div class="l-main2__img__box"><img src="assets/image/pht_reason02.jpg" alt=""></div></li>
             </ul>
           </div>
-          <div class="point3">
+          <div class="l-main2__p3">
             <ul>
-              <li class="point_img"><div class="img_box"><img src="assets/image/pht_reason03.jpg" alt=""></div></li>
-              <li class="point">
-                <h3>point<span class="number">３</span></h3>
+              <li class="l-main2__img"><div class="l-main2__img__box"><img src="assets/image/pht_reason03.jpg" alt=""></div></li>
+              <li class="l-main2__point">
+                <h3>point<span class="l-main2__point__number"> 3</span></h3>
                 <h4>徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</h4>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -126,89 +130,85 @@
           </div>
         </div>
       </section>
-      <div class="entry">
-        <div class="hidden_box">
-          <div class="entry_text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
-          <a href="/entry"><button class="btn_entry">入学説明会に申し込む</button></a>
+      <div class="p-entry">
+        <div class="p-entry__box">
+          <div class="p-entry__text"><p>入学ご検討の方は、まずは入学説明会に<br>お越しください</p></div>
+          <button class="c-btn__entry" onclick="location.href='entry'">入学説明会に申し込む</button>
         </div>
       </div>
     </div>
 
     <!--- =========================== メイン３ =================================== --->
-    <div id="main3" class="contents_inner">
-      <section class="section_wrap">
-        <div class="course">
-          <div class="title">
+    <div id="main3" class="p-contents_inner">
+      <section class="p-section">
+        <div class="l-main3">
+          <div class="p-title">
             <h2>コース・目的</h2>
           </div>
-          <div class="tab">
-            <input id="year" type="radio" name="tab_item" checked>
-            <label class="tab_item" for="year">学年別から選ぶ</label>
-            <input id="perpose" type="radio" name="tab_item">
-            <label class="tab_item" for="perpose">目的別から選ぶ</label>
-            <div class="tab_content" id="year_content">
-              <div class="tab_content_description">
-                <ul>
-                  <li class="year1">
-                    <div class=""><a href=""><img src="assets/image/pht_cource01.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 高卒生</div>
-                  </li>
-                  <li class="year2">
-                    <div class=""><a href=""><img src="assets/image/pht_cource02.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 高校3年生</div>
-                  </li>
-                  <li class="year3">
-                    <div class=""><a href=""><img src="assets/image/pht_cource03.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 高校2年生</div>
-                  </li>
-                  <li class="year4">
-                    <div class=""><a href=""><img src="assets/image/pht_cource04.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 高校1年生</div>
-                  </li>
-                </ul>
-              </div>
+          <div class="l-main3__tab">
+            <input id="year" type="radio" name="tab_item" checked="checked">
+            <label class="l-main3__tab__item" for="year">学年別から選ぶ</label>
+            <div class="l-main3__tab__content">
+              <ul>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource01.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 高卒生</div>
+                </li>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource02.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 高校3年生</div>
+                </li>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource03.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 高校2年生</div>
+                </li>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource04.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 高校1年生</div>
+                </li>
+              </ul>
             </div>
-            <div class="tab_content" id="perpose_content">
-              <div class="tab_content_description">
-                <ul>
-                  <li class="purpose1">
-                    <div class=""><a href=""><img src="assets/image/pht_cource05.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 難関大学・医学部合格を目指す</div>
-                  </li>
-                  <li class="purpose2">
-                    <div class=""><a href=""><img src="assets/image/pht_cource06.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 名門私立大学合格を目指す</div>
-                  </li>
-                  <li class="purpose3">
-                    <div class=""><a href=""><img src="assets/image/pht_cource07.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 国公立大学合格を目指す</div>
-                  </li>
-                  <li class="purpose4">
-                    <div class=""><a href=""><img src="assets/image/pht_cource08.jpg" alt=""></a></div>
-                    <div class="explanation"><i class="fa-solid fa-arrow-right-long"></i> 海外の大学合格を目指す</div>
-                  </li>
-                </ul>
-              </div>
+            <input id="perpose" type="radio" name="tab_item">
+            <label class="l-main3__tab__item" for="perpose">目的別から選ぶ</label>
+            <div class="l-main3__tab__content">
+              <ul>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource05.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 難関大学・医学部合格を目指す</div>
+                </li>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource06.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 名門私立大学合格を目指す</div>
+                </li>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource07.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 国公立大学合格を目指す</div>
+                </li>
+                <li>
+                  <div class=""><a href=""><img src="assets/image/pht_cource08.jpg" alt=""></a></div>
+                  <div class="l-main3__tab__content__text"><i class="fa-solid fa-arrow-right-long"></i> 海外の大学合格を目指す</div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <div class="entry">
-        <div class="hidden_box">
-          <div class="entry_text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
-          <a href="/entry"><button class="btn_entry">入学説明会に申し込む</button></a>
+      <div class="p-entry">
+        <div class="p-entry__box">
+          <div class="p-entry__text"><p>入学ご検討の方は、まずは入学説明会に<br>お越しください</p></div>
+          <button class="c-btn__entry" onclick="location.href='entry'">入学説明会に申し込む</button>
         </div>
       </div>
     </div>
 
     <!--- =========================== メイン４ =================================== --->
-    <div id="main4" class="contents_inner">
-      <section class="section_wrap">
-        <div class="cost">
-          <div class="title">
+    <div id="main4" class="p-contents_inner">
+      <section class="p-section">
+        <div class="l-main4">
+          <div class="p-title">
             <h2>費用</h2>
           </div>
-          <table class="table_cost">
+          <table class="l-main4__table">
             <tr>
               <th>年間講数</th>
               <th>年間授業料（税込み）</th>
@@ -240,28 +240,28 @@
           </table>
         </div>
       </section>
-      <div class="entry">
-        <div class="hidden_box">
-          <div class="entry_text">入学ご検討の方は、まずは入学説明会に<br>お越しください</div>
-          <a href="/entry"><button class="btn_entry">入学説明会に申し込む</button></a>
+      <div class="p-entry">
+        <div class="p-entry__box">
+          <div class="p-entry__text"><p>入学ご検討の方は、まずは入学説明会に<br>お越しください</p></div>
+          <button class="c-btn__entry" onclick="location.href='entry'">入学説明会に申し込む</button>
         </div>
       </div>
     </div>
   </main>
   
   <!--- =========================== フッター =================================== --->
-  <footer class="footer">
-    <div class="footer_image">
+  <footer class="l-footer">
+    <div>
       <ul>
         <li>
-          <a href="/faq">
+          <a href="faq">
             <img class="pc" src="assets/image/pht_qa.jpg" alt="">
             <img class="sp" src="assets/image/pht_qa_sp.jpg" alt="">
             <span>よくあるご質問</span>
           </a>
         </li>
         <li>
-          <a href="/search">
+          <a href="search">
             <img class="pc" src="assets/image/pht_classrooms.jpg" alt="">
             <img class="sp" src="assets/image/pht_classrooms_sp.jpg" alt="">
             <span>お近くの教室を探す</span>
@@ -269,7 +269,7 @@
         </li>
       </ul>
     </div>
-    <div class="copyright">
+    <div class="l-footer__copyright">
       <p><small>copyright© 2023 Kira-Kira Juku All Rights Reserved.</small></p>
     </div>
   </footer>

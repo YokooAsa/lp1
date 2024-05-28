@@ -1,12 +1,12 @@
 // ============ ヘッダー用 =================
 function openNav() {
-    const nav = document.querySelector(".gnav");
-    nav.classList.toggle("nav-active");
+    const nav = document.querySelector(".l-header__nav");
+    nav.classList.toggle("c-nav__active");
 };
 function closeNav() {
-    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
     if (mediaQuery.matches) {
-        const nav = document.querySelector(".gnav");
-        nav.classList.remove("nav-active");
+        const nav = document.querySelector(".l-header__nav");
+        nav.classList.remove("c-nav__active");
     }
 };
