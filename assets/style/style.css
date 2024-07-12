@@ -81,8 +81,29 @@ a:hover {
   font-size: 1.25rem;
   font-weight: bold;
 }
-.p-entry .p-entry__box .c-btn__entry {
-  margin-top: 1.25rem;
+
+/*20240712 既存サイト追加修正分 ここから*/
+.c-btn__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-btn__freetrial {
+  width: 17.625rem;
+  height: 3.8125rem;
+  background: linear-gradient(to right, #e4bb27, #f6aa00);
+  border: none;
+  border-radius: 1.9375rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+/*20240712 既存サイト追加修正分 ここまで*/
+
+.p-entry .p-entry__box .c-btn__entry,
+.p-entry .p-entry__box .c-btn__freetrial {
+  margin: 1.25rem 10px 0;
 } 
 .p-contents {
   padding-top: 6.0rem;
@@ -500,7 +521,10 @@ a:hover {
     margin-right: 1rem;
   }
   .p-entry {
-    height: 13.3125rem;
+    /* height: 13.3125rem; */
+    height: 18rem; /*20240712 既存サイト追加修正分 */
+    align-items: flex-start; /*20240712 既存サイト追加修正分 */
+    padding-top: 2.5rem; /*20240712 既存サイト追加修正分 */
     margin-top: 0;
   }
   .p-entry .p-entry__box {
@@ -519,6 +543,15 @@ a:hover {
     padding-top: 4.375rem;
     margin-top: -4.375rem;
   }
+  
+  /*20240712 既存サイト追加修正分 ここから*/
+  .c-btn__inner {
+    flex-direction: column;
+  }
+  .c-btn__freetrial {
+    width: 80%;
+  }
+  /*20240712 既存サイト追加修正分 ここまで*/
 
   /* ----------------------------
     ヘッダー用
